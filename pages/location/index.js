@@ -7,10 +7,8 @@ const LocationPage = props => {
   const { id } = router.query;
   return (
     <>
-      <main className="location_page_main">
-        <LocationInfo locationId={id}></LocationInfo>
-        <LocationResidents locationId={id}></LocationResidents>
-      </main>
+      <LocationInfo locationId={id}></LocationInfo>
+      <LocationResidents locationId={id}></LocationResidents>
     </>
   );
 };
