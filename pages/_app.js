@@ -10,7 +10,7 @@ const app = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>Index page</title>
+        <title>Rick and Morty Book</title>
         <link href="/style/app.css" rel="stylesheet" />
       </Head>
       <AnimatePresence exitBeforeEnter>
