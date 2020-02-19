@@ -1,0 +1,25 @@
+// main: ./app.less
+.resident_info_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 400px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+  }
+}
+
+.resident_info__image {
+  width: 100vw;
+  @media (min-width: 400px) {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.resident_info_text_container {
+  padding: 8px;
+}

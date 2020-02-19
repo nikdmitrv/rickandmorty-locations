@@ -1,0 +1,65 @@
+//main: ./app.less
+@import "./vars";
+
+.locations_container {
+  display: grid;
+  grid-template-columns: 100%;
+  @media (max-width: 300px) {
+    justify-items: center;
+  }
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+  }
+}
+.location_item_container {
+  display: flex;
+  min-height: 145px;
+  border: 1px black solid;
+  background: @location-item-bg;
+  box-shadow: @item-glow;
+  margin: 4px 8px;
+  h3,
+  p {
+    margin: 0;
+  }
+  @media (max-width: 300px) {
+    flex-direction: column;
+    max-width: 145px;
+  }
+  @media (min-width: 800px) {
+    flex-direction: column;
+    max-width: 220px;
+  }
+}
+
+.location_item__image {
+  @media (min-width: 800px) {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.location_item_info {
+  display: grid;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  margin: 10px;
+}
+
+.location_item_residents {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  @media (max-width: 340px) {
+    grid-template-columns: repeat(3, 25px);
+  }
+  gap: 8px;
+}
+
+.location_item__resident {
+  width: 50px;
+  height: 50px;
+  @media (max-width: 340px) {
+    width: 25px;
+    height: 25px;
+  }
+}

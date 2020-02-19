@@ -1,7 +1,10 @@
-export default function Index() {
+import LocationsList from "../components/LocationsList/LocationsList";
+const Index = props => {
   return (
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <>
+      <LocationsList />
+    </>
   );
-}
+};
+
+export default Index;
