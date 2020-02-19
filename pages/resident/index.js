@@ -32,9 +32,9 @@ const ResidentInfo = props => {
 const ResidentPage = props => {
   const router = useRouter();
   return (
-    <>
+    <main>
       <ResidentInfo residentId={router.query.id}></ResidentInfo>
-    </>
+    </main>
   );
 };
 
