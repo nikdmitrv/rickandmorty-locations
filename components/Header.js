@@ -3,11 +3,11 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <Link href="/">
         <img src="/images/Header.png" alt="header"></img>
       </Link>
-    </div>
+    </header>
   );
 };
 
