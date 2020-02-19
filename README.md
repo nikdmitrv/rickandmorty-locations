@@ -22,3 +22,5 @@ npm install
 npm run build
 npm start
 ```
+
+После этого откройте в браузере http://localhost:3000
